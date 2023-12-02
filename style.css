@@ -32,12 +32,15 @@ p {
     margin: 15px 15px;
 }
 
-.simple-qr-container h3,
-p {
-    width: calc(100% - 15%/2);
+.simple-qr-container h3,p {
+    width: calc(100% - 18%/2);
     text-align: center;
     position: relative;
     left: 15px;
+}
+
+.simple-qr-container p {
+    width: calc(100% - 25%/2);
 }
 
 .simple-qr-container h3 {
@@ -50,12 +53,19 @@ p {
 /* For small devices or Mobile */
 @media screen and (max-width: 375px) {
     .container {
-        /* background-color: hsl(212, 45%, 89%); */
-        background-color: hsl(212, 94%, 27%);
+        background-color: hsl(212, 45%, 89%);
+        /* background-color: hsl(212, 94%, 27%); */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .simple-qr-container {
+        width: 320px;
+        height: 480px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        margin: 60px 0;
     }
 }
 
